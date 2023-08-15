@@ -1,0 +1,166 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.clear-fix{
+  clear: both;
+}
+.ren{
+  color: azure;
+}
+
+:root{
+  --green:#27ae60;
+  --blue:#2980b9;
+  --orange:#f39c12;
+  --red:#e84118;
+  --koyu-mavi:#3B3B98;
+  --ocean:#9AECDB;
+  --dark:#2d3436;
+  --silver:silver;
+  --white:white;
+  --deep:#30336b;
+
+  --bg-color:silver;
+  --text:var(--blue);
+  --body-color:white;
+  --link-color:blue;
+  --link-color-hover:#c7ecee;
+
+}
+
+:root[data-theme="dark"]{
+--bg-color:var(--deep);
+--text:var(--silver);
+--body-color:var(--dark);
+}
+
+body {
+background-color: var(--body-color);
+color:var(--text);
+}
+
+/* general */
+header,main {
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+ /* Nav bar  */
+
+ header{
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px;
+ }
+
+ header > nav { 
+  width: 900px;
+  margin:0 auto;
+ }
+ header > nav > ul{
+  float: left;
+  list-style: none;
+ }
+ header > nav > ul:last-of-type{
+  float: right;
+ }
+ header > nav  > ul > li {
+  float: left;
+  margin-right: 52px;
+ }
+ header > nav  > ul > li > a {
+  text-decoration: none;
+  color:var(--link-color);
+  padding: 9px 9px;
+  border-radius: 7px;
+ }
+ header > nav  > ul > li > a:hover{
+background-color: var(--link-color-hover);
+color: var(--text);
+ }
+ header > nav  > ul > li:last-child > a{
+  background-color: var(--green);
+  color: var(--bg-color);
+ }
+
+ header > nav  > ul > li:last-child > a:hover{
+  background-color: var(--ocean);
+ }
+
+ /* MAIN */
+main{
+  width: 900px;
+  margin:0 auto 30px;
+  /* min-height: 600px; */
+  border: 1px solid var(--blue);
+  border-radius: 7px;
+  padding: 20px;
+  min-height: 800px;
+}
+
+/* Asıde */
+aside,section {
+  float: left;
+}
+aside {
+  width: 30%;
+  padding: 20px;
+}
+aside > ul {
+  list-style: none;
+}
+aside > ul > li {
+  margin-bottom: 20px;
+}
+aside > ul > li > a {
+  text-decoration: none;
+  color: var(--link-color);
+  padding: 7px 10px;
+  display: block;
+}
+aside > ul > li > a:hover {
+  color: aquamarine;
+}
+
+
+/* section */
+section {
+  width: 70%;
+}
+
+
+/* article */
+article, article > header {
+  background-color: var(--body-color);
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 7px;
+}
+article > header {
+  padding: 0;
+}
+article > footer {
+  padding:10px 0;
+}
+article > footer > a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+article > p {
+  margin-bottom: 10px;
+}
+img {
+  width: 100%;
+  border: 1px solid var(--bg-color);
+  background-color: var(--bg-color);
+  padding: 4px;
+  margin:10px 0;
+}
